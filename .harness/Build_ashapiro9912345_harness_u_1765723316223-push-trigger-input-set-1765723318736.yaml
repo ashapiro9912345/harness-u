@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ashapiro9912345_harness_u_1765723316223-push-trigger-input-set
+  identifier: Build_ashapiro9912345_harness_u_1765723316223pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Testwithai
+  pipeline:
+    identifier: Build_ashapiro9912345_harness_u_1765723316223
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
