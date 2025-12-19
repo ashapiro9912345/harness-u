@@ -23,6 +23,7 @@ pipeline:
                   identifier: echo
                   name: echo
                   spec:
+                    shell: Sh
                     command: echo hello world
                   timeout: ""
                   type: Run
@@ -33,3 +34,15 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+  notificationRules:
+    - name: test
+      identifier: test
+      pipelineEvents:
+        - type: AllEvents
+      notificationMethod:
+        type: Email
+        spec:
+          userGroups: []
+          recipients:
+            - ashapiro_99@yahoo.com
+      enabled: true
